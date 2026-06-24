@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#f5f7fb;
+        }
+
+        header{
+            background:linear-gradient(135deg,#ff6b81,#ffb347);
+            padding:20px 80px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:white;
+            box-shadow:0 10px 25px rgba(0,0,0,.1);
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            font-weight:500;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#222;
+        }
+
+        .hero{
+            height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:70px 80px;
+        }
+
+        .hero-text{
+            width:50%;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .hero-text p{
+            color:#666;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            border-radius:50px;
+            text-decoration:none;
+            background:#ff6b81;
+            color:white;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#ff4d6d;
+            transform:translateY(-3px);
+        }
+
+        .hero img{
+            width:450px;
+            animation:float 3s ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+            100%{transform:translateY(0);}
+        }
+
+        .products{
+            padding:70px 80px;
+        }
+
+        .title{
+            text-align:center;
+            font-size:40px;
+            margin-bottom:50px;
+            color:#333;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 15px 30px rgba(0,0,0,.08);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+        }
+
+        .card-body{
+            padding:20px;
+        }
+
+        .card-body h3{
+            margin-bottom:10px;
+            color:#333;
+        }
+
+        .price{
+            color:#ff4d6d;
+            font-size:22px;
+            font-weight:bold;
+            margin:15px 0;
+        }
+
+        .buy{
+            display:block;
+            text-align:center;
+            padding:12px;
+            border-radius:10px;
+            background:#ff6b81;
+            color:white;
+            text-decoration:none;
+            transition:.3s;
+        }
+
+        .buy:hover{
+            background:#ff4d6d;
+        }
+
+        footer{
+            margin-top:70px;
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:900px){
+
+            header{
+                padding:20px;
+            }
+
+            .hero{
+                flex-direction:column;
+                text-align:center;
+                padding:40px 20px;
+            }
+
+            .hero-text{
+                width:100%;
+            }
+
+            .hero img{
+                width:90%;
+                margin-top:40px;
+            }
+
+            .products{
+                padding:40px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">🌸 Flower Shop</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Flowers</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Fresh Flowers Everyday</h1>
+
+        <p>
+            Beautiful flowers for every occasion.
+            Surprise your loved ones with fresh bouquets delivered to your door.
+        </p>
+
+        <a href="#" class="btn">Shop Now</a>
+
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=700" alt="">
+
+</section>
+
+<section class="products">
+
+<h2 class="title">Our Flowers</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=700">
+
+<div class="card-body">
+
+<h3>Rose Bouquet</h3>
+
+<p>Fresh red roses with premium wrapping.</p>
+
+<div class="price">$25</div>
+
+<a href="#" class="buy">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=700">
+
+<div class="card-body">
+
+<h3>Tulips</h3>
+
+<p>Beautiful colorful tulips for every celebration.</p>
+
+<div class="price">$18</div>
+
+<a href="#" class="buy">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?w=700">
+
+<div class="card-body">
+
+<h3>White Lily</h3>
+
+<p>Elegant white lilies with fresh fragrance.</p>
+
+<div class="price">$30</div>
+
+<a href="#" class="buy">Buy Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Flower Shop | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
