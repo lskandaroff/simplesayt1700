@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiroyli Sayt</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI,sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#667eea,#764ba2);
+        }
+
+        .card{
+            width:400px;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(15px);
+            border-radius:20px;
+            padding:40px;
+            text-align:center;
+            color:white;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h1{
+            font-size:38px;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            opacity:0.9;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:white;
+            color:#764ba2;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-5px);
+            box-shadow:0 10px 20px rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Salom 👋</h1>
+        <p>Bu zamonaviy Glassmorphism dizaynidagi HTML sahifa.</p>
+        <a href="#" class="btn">Boshlash</a>
+    </div>
+
+</body>
+</html>
